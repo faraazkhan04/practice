@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Shopping Cart - buy online your next thingy_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="./Shopping Cart - buy online your next thingy_files/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - buy online your next thingy</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/CartWidget/cart-widget.module.scss">._container_o22d4_1 {
+  margin: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+._container_o22d4_1:hover {
+  outline: 1px solid white;
+}
+._container_o22d4_1 ._shoppingCart_o22d4_15 {
+  height: 3em;
+  padding: 1.5rem 0.4rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+._container_o22d4_1 ._productsCount_o22d4_21 {
+  z-index: 1;
+  font-size: 2em;
+  top: 38px;
+  color: orange;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/Header/header.module.scss">._header_nu5ka_1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #213547;
+  transition: height 0.3s ease;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  opacity: 0.9;
+  backdrop-filter: saturate(180%) blur(20px);
+  justify-content: space-between;
+  z-index: 1;
+}
+._header_nu5ka_1 ._logo_nu5ka_16 {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  transform: scaleX(-1);
+}
+._header_nu5ka_1 ._logo_nu5ka_16:hover {
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/CurrencyFormatter/currency-formatter.module.scss">._currency_299s2_1 {
+  font-weight: 700;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/Products/products.module.scss">._productPage_19pzr_1 {
+  padding: 1rem;
+  margin-top: 8rem;
+}
+._productPage_19pzr_1 ._container_19pzr_5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 {
+  flex-basis: 33.33%;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 h3 {
+  color: #007185;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+}
+._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 img {
+  height: 6rem;
+}
+._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 button {
+  background-color: #77e7d8;
+  width: 13rem;
+  padding: 0.5rem;
+  font-size: 1.1em;
+  border-radius: 25px;
+  border-color: #D5D9D9;
+  border-style: solid;
+  border-width: 1px;
+}
+._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 button:hover:not([disabled]) {
+  background-color: #eecf1d;
+  cursor: pointer;
+}
+._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 button:disabled {
+  opacity: 0.5;
+  background-color: lightgray;
+}
+@media (max-width: 767px) {
+  ._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 400px) {
+  ._productPage_19pzr_1 ._container_19pzr_5 ._product_19pzr_1 {
+    flex-basis: 100%;
+  }
+}
+
+._error_19pzr_53 {
+  color: red;
+  text-align: center;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/Loader/loader.module.scss">._loader_481db_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+._spinner_481db_8 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: #333;
+  animation: _spin_481db_8 1s infinite linear;
+}
+
+@keyframes _spin_481db_8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/Footer/footer.module.scss">._footer_1l671_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  color: deeppink;
+}
+._footer_1l671_1 ul {
+  list-style-type: none;
+  text-align: center;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+._footer_1l671_1 ._footerLinks_1l671_15 a {
+  color: deeppink;
+  font-size: 0.8em;
+}
+._footer_1l671_1 ._footerCopyrights_1l671_19 {
+  color: var(--high-contrast);
+  font-size: 0.6em;
+}
+._footer_1l671_1 ._version_1l671_23 {
+  font-size: 0.6em;
+  line-height: 100%;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/Quantifier/quantifier.module.scss">._quantifier_p8w2b_1 {
+  display: flex;
+  align-items: center;
+}
+._quantifier_p8w2b_1 input {
+  order: 1;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+  position: relative;
+  height: 30px;
+  text-align: center;
+  width: 30px;
+  display: inline-block;
+  font-size: 13px;
+  resize: vertical;
+}
+._quantifier_p8w2b_1 input[type=button] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+._quantifier_p8w2b_1 input::-webkit-outer-spin-button,
+._quantifier_p8w2b_1 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+._quantifier_p8w2b_1 input[type=button] {
+  background-color: #eeeeee;
+  border: none;
+  width: 30px;
+  transition: all 300ms ease;
+  font-weight: bold;
+  font-size: 1.2em;
+  height: 30px;
+  padding: 0;
+  position: relative;
+}
+._quantifier_p8w2b_1 input[type=button]:hover {
+  background-color: #D5D9D9;
+}
+._quantifier_p8w2b_1 input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/TotalPrice/total-price.module.scss">._totalPrice_12n52_1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: right;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/components/Cart/cart.module.scss">._cart_gfyq6_1 {
+  padding: 1rem;
+  margin-top: 8rem;
+}
+._cart_gfyq6_1 ._container_gfyq6_5 {
+  display: flex;
+  flex-direction: column;
+}
+._cart_gfyq6_1 ._container_gfyq6_5 ._product_gfyq6_9 {
+  display: flex;
+  border-top: 1px dotted;
+  border-left: 1px dotted;
+  border-right: 1px dotted;
+  padding: 0.3rem 0.5rem;
+  align-items: center;
+}
+._cart_gfyq6_1 ._container_gfyq6_5 ._product_gfyq6_9 h3 {
+  color: #007185;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 20px;
+  margin: 0.3rem;
+  flex: 1;
+}
+._cart_gfyq6_1 ._container_gfyq6_5 ._product_gfyq6_9 img {
+  max-width: 3rem;
+  height: auto;
+  margin: 0.875rem;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/app.module.scss">#_root_1hszf_1 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+._error_1hszf_8 {
+  color: red;
+  margin: 1rem;
+  text-align: center;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/admin/Desktop/shopping-cart-app-main/shopping-cart-app-main/src/index.css">:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #356694;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #f5c4edc2;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: white;
+    background-color: black;
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><header class="_header_nu5ka_1" style="height: 150px; transition: height 200ms ease-in 0s;"><div><a href="http://localhost:5173/"><img src="./Shopping Cart - buy online your next thingy_files/logo.svg" class="_logo_nu5ka_16" alt="Shopping Cart Application" style="height: 6rem; transition: height 200ms ease-in 0s;"></a></div><div><button class="_container_o22d4_1"><span class="_productsCount_o22d4_21" style="font-size: 2em; transition: font-size 200ms ease-in 0s;">6</span><img src="./Shopping Cart - buy online your next thingy_files/shopping-cart.svg" class="_shoppingCart_o22d4_15" alt="Go to Cart" style="height: 3rem; transition: height 200ms ease-in 0s;"></button></div></header><main><section class="_productPage_19pzr_1"><h1>Products</h1><div class="_container_19pzr_5"><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail.jpg" alt="iPhone 9"><h3>iPhone 9</h3><p>Price: <span class="_currency_299s2_1">£549.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(1).jpg" alt="iPhone X"><h3>iPhone X</h3><p>Price: <span class="_currency_299s2_1">£899.00</span></p><button disabled="">Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(2).jpg" alt="Samsung Universe 9"><h3>Samsung Universe 9</h3><p>Price: <span class="_currency_299s2_1">£1,249.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(3).jpg" alt="OPPOF19"><h3>OPPOF19</h3><p>Price: <span class="_currency_299s2_1">£280.00</span></p><button disabled="">Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(4).jpg" alt="Huawei P30"><h3>Huawei P30</h3><p>Price: <span class="_currency_299s2_1">£499.00</span></p><button disabled="">Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail.png" alt="MacBook Pro"><h3>MacBook Pro</h3><p>Price: <span class="_currency_299s2_1">£1,749.00</span></p><button disabled="">Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(5).jpg" alt="Samsung Galaxy Book"><h3>Samsung Galaxy Book</h3><p>Price: <span class="_currency_299s2_1">£1,499.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(6).jpg" alt="Microsoft Surface Laptop 4"><h3>Microsoft Surface Laptop 4</h3><p>Price: <span class="_currency_299s2_1">£1,499.00</span></p><button disabled="">Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(7).jpg" alt="Infinix INBOOK"><h3>Infinix INBOOK</h3><p>Price: <span class="_currency_299s2_1">£1,099.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail.jpeg" alt="HP Pavilion 15-DK1056WM"><h3>HP Pavilion 15-DK1056WM</h3><p>Price: <span class="_currency_299s2_1">£1,099.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(8).jpg" alt="perfume Oil"><h3>perfume Oil</h3><p>Price: <span class="_currency_299s2_1">£13.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(9).jpg" alt="Brown Perfume"><h3>Brown Perfume</h3><p>Price: <span class="_currency_299s2_1">£40.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail.webp" alt="Fog Scent Xpressio Perfume"><h3>Fog Scent Xpressio Perfume</h3><p>Price: <span class="_currency_299s2_1">£13.00</span></p><button disabled="">Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(10).jpg" alt="Non-Alcoholic Concentrated Perfume Oil"><h3>Non-Alcoholic Concentrated Perfume Oil</h3><p>Price: <span class="_currency_299s2_1">£120.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(11).jpg" alt="Eau De Perfume Spray"><h3>Eau De Perfume Spray</h3><p>Price: <span class="_currency_299s2_1">£30.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(12).jpg" alt="Hyaluronic Acid Serum"><h3>Hyaluronic Acid Serum</h3><p>Price: <span class="_currency_299s2_1">£19.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(13).jpg" alt="Tree Oil 30ml"><h3>Tree Oil 30ml</h3><p>Price: <span class="_currency_299s2_1">£12.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(14).jpg" alt="Oil Free Moisturizer 100ml"><h3>Oil Free Moisturizer 100ml</h3><p>Price: <span class="_currency_299s2_1">£40.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(15).jpg" alt="Skin Beauty Serum."><h3>Skin Beauty Serum.</h3><p>Price: <span class="_currency_299s2_1">£46.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(16).jpg" alt="Freckle Treatment Cream- 15gm"><h3>Freckle Treatment Cream- 15gm</h3><p>Price: <span class="_currency_299s2_1">£70.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(17).png" alt="- Daal Masoor 500 grams"><h3>- Daal Masoor 500 grams</h3><p>Price: <span class="_currency_299s2_1">£20.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(18).jpg" alt="Elbow Macaroni - 400 gm"><h3>Elbow Macaroni - 400 gm</h3><p>Price: <span class="_currency_299s2_1">£14.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(19).jpg" alt="Orange Essence Food Flavou"><h3>Orange Essence Food Flavou</h3><p>Price: <span class="_currency_299s2_1">£14.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(20).jpg" alt="cereals muesli fruit nuts"><h3>cereals muesli fruit nuts</h3><p>Price: <span class="_currency_299s2_1">£46.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(21).jpg" alt="Gulab Powder 50 Gram"><h3>Gulab Powder 50 Gram</h3><p>Price: <span class="_currency_299s2_1">£70.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(22).jpg" alt="Plant Hanger For Home"><h3>Plant Hanger For Home</h3><p>Price: <span class="_currency_299s2_1">£41.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(23).webp" alt="Flying Wooden Bird"><h3>Flying Wooden Bird</h3><p>Price: <span class="_currency_299s2_1">£51.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(24).jpg" alt="3D Embellishment Art Lamp"><h3>3D Embellishment Art Lamp</h3><p>Price: <span class="_currency_299s2_1">£20.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(25).webp" alt="Handcraft Chinese style"><h3>Handcraft Chinese style</h3><p>Price: <span class="_currency_299s2_1">£60.00</span></p><button>Add to Cart</button></div><div class="_product_19pzr_1"><img src="./Shopping Cart - buy online your next thingy_files/thumbnail(26).jpg" alt="Key Holder"><h3>Key Holder</h3><p>Price: <span class="_currency_299s2_1">£30.00</span></p><button>Add to Cart</button></div></div></section></main><footer class="_footer_1l671_1" data-cy="footer"><ul><li class="_footerLinks_1l671_15"><a href="https://twitter.com/mihailgaberov" target="_blank" rel="noopener noreferrer" data-cy="twitterLink">twitter</a> • <a href="https://github.com/mihailgaberov" target="_blank" rel="noopener noreferrer" data-cy="githubLink">github</a></li><li class="_footerCopyrights_1l671_19">© Mihail Gaberov 2023. All rights reserved.</li><li><div class="_version_1l671_23">v.1.0.0</div></li></ul></footer></div>
+    <script type="module" src="./Shopping Cart - buy online your next thingy_files/main.tsx"></script>
+  
+
+</body></html>
